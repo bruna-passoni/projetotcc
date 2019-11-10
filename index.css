@@ -1,0 +1,601 @@
+
+	html{
+		width: 100%;
+		background-color: rgb(57,35,80);
+	}
+
+	body {
+		-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+		-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+		-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+		font-family: 'Montserrat', sans-serif !important;
+		font-size:12px;
+		background: url("https://i.imgur.com/w1aCOPC.png");
+		background-attachment: fixed;
+		background-size: cover;
+		margin:0px;
+		padding:0px;
+		width:100%;
+		height: 100%;
+	}
+
+	textarea:focus, input:focus, select:focus {
+		outline: 0;
+	} 
+
+	#logo-div{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	#login-div{
+		background-color: rgba(0,0,20,0.4);
+		padding: 16px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.general-input, #fullname-div{
+		color: white;
+		height: 46px;
+		border-radius: 48px;
+		border: none;
+		background-color: RGBA(219, 74, 135, 0.4);
+		font-size: 15px;
+		font-weight: bolder;
+		letter-spacing: 1px;
+		background-repeat:no-repeat;
+		background-position-x: 16px;
+		background-position-y: 6px;
+		text-align: left;
+		padding-left: 60px !important;
+	}
+
+	.general-input:focus {
+		transition: 0.25s;
+		box-shadow: none;
+		border: none;
+		border-radius: 0px;
+		border-left: 6px solid white;
+		border-right: 6px solid white;
+		outline: 0;
+		padding-left: 54px !important;
+	} 
+
+	.general-input::placeholder {
+		opacity: 1;
+		color: rgb(170, 156, 200) !important;
+		letter-spacing: 1px;
+	}
+	
+	.general-input-white{
+		color: rgb(92, 79, 121) !important;
+		height: 42px;
+		border-radius: 24px;
+		border: none;
+		background-color: white;
+		font-size: 15px;
+		font-weight: bolder;
+		letter-spacing: 1px;
+		text-align: left;
+		padding-left: 30px !important;
+	}
+
+	.general-input-white:focus {
+		transition: 0.25s;
+		box-shadow: none;
+	} 
+
+	.general-input-white::placeholder {
+		opacity: 1;
+		color: rgb(170, 156, 200) !important;
+		letter-spacing: 1px;
+	} 
+	
+	button{
+		outline: none !important;
+	}
+
+	.general-button{
+		font-size: 0.9em;
+		font-weight: bolder;
+		color: white;
+		height: 50px;
+		border-radius: 52px;
+		background: RGBA(230, 114, 163, 0);
+		border: 2px solid white;
+		letter-spacing: 1px;
+	}
+
+	#create-remember-div{
+		height: 24px;
+	}
+
+	#create-remember-div a{
+		color: white;
+		font-size: 0.9em;
+	}
+
+	/* create-account.html */
+
+	#create-account-div{
+		background-color: rgba(0,0,20,0.4);
+		padding: 16px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.title-label{
+		font-size: 16px;
+		font-weight: bolder;
+		color: white;
+		margin-bottom: 8px;
+		display: block;
+	}
+
+	.subtitle-label{
+		font-size: 11px;
+		font-weight: bolder;
+		color: white;
+		display: block;
+	}
+
+	.socials-button{
+		color: white;
+		height: 52px;
+		width: 52px;
+		border-radius: 60px;
+		background: #fff0;
+		border: 2px solid white;
+		display: inline;
+		margin-left: 6px !important;
+		margin-right: 6px !important;
+		padding: 0px;
+		font-size: 1.6em;
+		line-height: 0px;
+	}
+
+	#btn-facebook-2{
+		background-color: #6570c1;
+	}
+
+	#btn-twitter-2{
+		background-color: #71abdb;
+	}
+
+	#btn-google-2{
+		background-color: #db7171;
+	}
+	
+	/* esqueci-senha.html */
+	
+	#esqueci-senha{
+		background-color: rgba(0,0,20,0.4);
+		padding: 16px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	
+	
+	
+	/* create-profile.html */
+	
+	.fix-bg{
+		height: auto !important;
+	}
+	
+	#create-profile-div{
+		background-color: rgba(0,0,20,0.4);
+		padding: 16px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	#main-pic-div{
+		width: 128px;
+		height: 128px;
+		border: 2px solid white;
+		border-radius: 320px;
+		background-size: cover;
+		background-image: url('user-profile.png');
+		margin: 16px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	#sec-pics-div{
+		height: 100px;
+		padding: 0;
+	}
+	
+	.sec-pic-div{
+		width: 95px;
+		height: 95px;
+		background-size: cover;
+		background-image: url('user-profile.png');
+		margin: 7px;
+		float: left;
+		border: 2px solid white;
+	}
+	
+	#send-main-pic{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.general-input-pic{
+		width: 100%;
+		height: 100%;
+		font-size: 12px;
+		font-weight: 800;
+		color: #9c7ee1;
+	}
+	
+	.general-textarea{
+		padding: 8px;
+		background-color: transparent;
+		border: 2px solid white;
+		border-radius: 0;
+		font-weight: bolder;
+		color: white;
+	}
+	
+	.general-textarea::placeholder{
+		opacity: 1;
+		color: rgb(170, 156, 200) !important;
+		letter-spacing: 1px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	/* main-view.html */
+
+	#primary-img{
+		height: 128px;
+		width: 128px;
+		background-color: white;
+		border-radius: 180px;
+		background-size: cover;
+		border: 2px solid white;
+	}
+
+	#text-view{
+		font-size: 0.9em;
+		color: rgba(32, 2, 102, 0.6);
+		display: block;
+		margin: 10px;
+	}
+
+	#fullname-div{
+		text-align: center;
+		padding: 0px;
+		background-color: white;
+		display: none;
+	}
+
+
+
+
+
+	#main-div{
+		background-color: rgba(0,0,20,0.4);
+		width: 100%;
+		height: 100% !important;
+		box-sizing: border-box;
+		margin-top: 58px;
+	}
+
+	#menu-top-div{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}
+
+	#events-div{
+		width: 100%;
+	}
+
+	.users-t, .users-t-chat{
+		color: white;
+		padding: 6px;
+		overflow: hidden;
+		text-align: left;
+		margin-top: 0px;
+		margin-bottom: 0;
+		padding-left: 32px;
+		display: none;
+		background-color: rgba(255, 255, 255, 0.12);
+		transition: 0.25s;
+	}
+	
+	#profile-img-div{
+		background-color: gray;
+		display: inline-block;
+		width: 90px;
+		height: 90px;
+		border-radius: 100px;
+		left: -20px;
+		position: relative;
+		float: left;
+		background-size: cover;
+		background-image: url('user-profile.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		box-shadow: 0px 0px 1px #392350;
+	}
+	
+	.profile-info-div{
+		height: 90px;
+	}
+
+	#menu-bottom-div{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 64px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(134, 19, 73, 0.82);
+	}
+
+	.btn-menu{
+		width: 54px;
+		height: 54px;
+		font-size: 1.8em;
+		background-color: rgba(0, 0, 0, 0.1);
+		color: white;
+		border: none;
+		border-radius: 96px;
+		padding: 0px;
+		line-height: 0px;
+		margin-left: 8px !important;
+		margin-right: 8px !important;
+		border: 2px solid white;
+	}
+
+	#btn-menu-1{
+		position: absolute;
+		border: none;
+		background: none;
+		margin: 0px !important;
+		right: 0;
+	}
+
+	#menu-1{
+		position: absolute;
+		right: 0;
+		background-color: white;
+		top: 8px;
+		display: none;
+		box-shadow: 2px 2px 2px #411157;
+	}
+
+	#menu-1 a{
+		display: block;
+		color: black;
+		padding: 24px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		font-size: 14px;
+		text-decoration: none;
+		text-align: left;
+		padding-right: 48px;
+	}
+	
+	#main-pic-div-c{
+		height: 128px;
+		border-bottom: 2px solid white;
+		background-size: cover;
+		background-image: url('user-profile.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 1;
+	}
+	
+	#user-information-div{
+		background-color: rgba(65, 30, 104, 0.5);
+		position: relative;
+		overflow: hidden;
+	}
+	
+	#user-information-div label{
+		margin: 0;
+		text-align: left;
+		padding-bottom:4px;
+	}
+	
+	#menu-bottom-div .btn-menu{
+		opacity: 0.5;
+	}
+	
+	#menu-bottom-div .btn-menu.active{
+		opacity: 1;
+	}
+	
+	.nav-tabs {
+        border-bottom: 0 !important;
+	}
+
+	#search-div{
+		padding: 16px;
+		padding-top: 24px;
+	}
+
+	.user-n-u-div{
+		height: 148px;
+		float: left;
+		overflow: hidden;
+		width: 110px;
+	}
+
+	#user-n-u-div-content{
+		width: 98px;
+		height: 98px;
+		border: 2px solid white;
+		border-radius: 320px;
+		background-size: cover;
+		background-image: url('user-profile.png');
+		margin: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.user-n-u-label{
+		color: white;
+		text-shadow: 2px 2px 2px black;
+		margin: 0;
+		height: 36px;
+		font-size: 12px;
+	}
+
+	#city-district-n-u-label{
+		color: white;
+		text-shadow: 2px 2px 2px black;
+		margin: 0;
+		font-size: 12px;
+		transform: translateY(-40px);
+		padding-left: 12px;
+		padding-right: 12px;
+		background-color: rgba(62, 29, 85, 0.67);
+		border-radius: 30px;
+	}
+
+	/* admin-page.html */
+
+	#admin-page-div{
+		background-color: rgba(0,0,20,0.4);
+		width: 100%;
+		box-sizing: border-box;
+		height: 100% !important;
+		padding-top: 48px;
+	}
+
+	#btn-menu-back{
+		font-size: 20px;
+		position: absolute;
+		border: none;
+		background: none;
+		margin: 0px !important;
+	}
+
+	.title-label-top{
+		font-size: 16px;
+		font-weight: bolder;
+		color: white;
+		display: block;
+		margin: 0;
+	}
+
+	#users-div{
+		overflow: scroll;
+	}
+
+	.user-d-u-label{
+		color: white;
+		text-shadow: 2px 2px 2px black;
+		margin: 0;
+		font-size: 16px;
+		display: inherit;
+	}
+
+	/* User conversation */
+
+	#conversation-page-div{
+		background-color: rgba(0,0,20,0.4);
+		width: 100%;
+		box-sizing: border-box;
+		height: 100% !important;
+		padding-top: 48px;
+	}
+
+	.user-t{
+		color: white;
+		padding: 6px;
+		overflow: hidden;
+		text-align: left;
+		margin-top: 0px;
+		margin-bottom: 0;
+		padding-left: 40px;
+		background-color: rgba(63, 51, 74, 0.29);
+	}
+
+	#send-message-button{
+		background: none;
+		border: none;
+	}
+
+	#message-send-input{
+		border: none;
+		border-bottom: 2px solid white;
+		padding: 6px;
+		margin-bottom: 2px;
+		font-size: 14px;
+	}
+
+	#message-send-input::placeholder {
+		opacity: 0.6;
+		color: rgb(189, 179, 212) !important;
+		letter-spacing: 1px;
+	}
+
+	.message-p{
+		background-color: white;
+		margin: 0;
+		border-radius: 20px;
+		padding: 6px;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	.chat-sub-p{
+		font-size: 12px; 
+		text-align: left;
+		padding-left: 18px;
+		margin-bottom: 4px;
+		color: #ab4895;
+	}
+
+	.chat-msg-p{
+		margin-bottom: 10px;
+		text-align: left;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	.chat-user-label{
+		background-color: rgba(33, 35, 78, 0.6);
+		margin-left: 35px;
+	}
+
+	.chat-msg-label{
+		max-height: 48px; 
+		overflow: hidden; 
+		margin-top: 10px;
+	}
+
